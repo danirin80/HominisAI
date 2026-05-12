@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Auctor Login</title> <!-- Aggiornato titolo pagina -->
+<style>
+/* Reset margini per permettere l'header a tutta larghezza */
+body {
+    background:#000;
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambiato per separare Header dal Contenuto */
+    height: 100vh;
+}
+
+/* ===== HEADER (Copiato da Mentor) ===== */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+    border-bottom: 1px solid #0F4C5C;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.header-title {
+    color: #0F4C5C;
+    font-size: 44px;
+    font-weight: bold;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+/* ===== CONTENITORE CENTRALE PER IL LOGIN ===== */
+.login-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border:1px solid #0F4C5C;
+    padding:30px;
+    border-radius:8px;
+    width:300px;
+}
+
+h2 { color:#0F4C5C; text-align:center; }
+
+input {
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    font-size:16px;
+    box-sizing: border-box; /* Assicura che il padding non allarghi l'input */
+}
+
+button {
+    width:100%;
+    margin-top:20px;
+    padding:10px;
+    font-size:16px;
+    background:#0F4C5C;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER CON LOGO CLICCABILE (Uguale a Mentor) ===== -->
+<div class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="Logo HominisAI.png" alt="HominisAI Logo">
+        </a>
+    </div>
+    <div class="header-title">
+        Auctor
+    </div>
+</div>
+
+<!-- ===== SEZIONE LOGIN ===== -->
+<div class="login-wrapper">
+    <div class="box">
+        <h2>Auctor Access</h2> <!-- Aggiornato titolo box -->
+        <form method="post">
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

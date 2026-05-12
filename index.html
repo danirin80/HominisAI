@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HominisAI - Soon in your life</title>
+
     <style>
         /* Sfondo nero e impostazioni generali */
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #000000; 
-            color: #ffffff; 
+            background-color: #000000;
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -22,24 +23,58 @@
         .content {
             text-align: center;
             padding: 20px;
+            /* Leggero spostamento verso l'alto per bilanciare il nuovo tasto */
+            margin-top: -20px; 
         }
 
-        /* Logo - Dimensione 500px */
+        /* Logo - Dimensione max 500px */
         img {
             width: 100%;
-            max-width: 500px; 
+            max-width: 500px;
             height: auto;
             margin-bottom: 5px;
         }
 
-        /* Testo aggiornato e avvicinato al logo */
+        /* Testo sotto il logo */
         h1 {
             font-weight: 300;
             letter-spacing: 1px;
             margin-top: 0;
-            margin-bottom: 40px;
+            margin-bottom: 20px; /* Ridotto leggermente per recuperare spazio */
             font-size: 1.3rem;
             color: #eeeeee;
+        }
+
+        /* ===== BOTTONE MENTOR ===== */
+        .mentor-button {
+            display: block;
+            margin: 0 auto 10px auto; /* Ridotto margine inferiore per far posto ad Auctor */
+            font-size: 44px;
+            color: #0F4C5C; /* blu petrolio */
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .mentor-button:hover {
+            opacity: 0.8;
+        }
+
+        /* ===== NUOVO TASTO AUCTOR LOGIN ===== */
+        .auctor-button {
+            display: block;
+            margin: 0 auto 30px auto; /* centrato + spazio sotto verso i contatti */
+            font-size: 30px;
+            color: #005f6b; /* Blu petrolio richiesto */
+            text-decoration: underline; /* Sottolineato richiesto */
+            font-weight: bold; /* Grassetto richiesto */
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .auctor-button:hover {
+            opacity: 0.8;
         }
 
         /* Tasto Contatti */
@@ -60,7 +95,7 @@
             transform: scale(1.05);
         }
 
-        /* Link email testuale piccolo sotto */
+        /* Link email piccolo sotto */
         .email-footer {
             display: block;
             margin-top: 20px;
@@ -70,18 +105,31 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="content">
-        <!-- Il logo deve essere nella stessa cartella -->
+        <!-- Logo -->
         <img src="Logo HominisAI.png" alt="HominisAI Logo">
-        <h1>in your life soon, you won't even notice
-</h1>
 
-        <!-- Tasto che apre la mail predefinita -->
+        <h1>in your life soon, you won't even notice</h1>
+
+        <!-- BOTTONE MENTOR CENTRATO -->
+        <a href="mentor-en.html" class="mentor-button">
+            Mentor
+        </a>
+
+        <!-- NUOVO TASTO AUCTOR LOGIN -->
+        <a href="login.html" class="auctor-button">
+            Auctor Login
+        </a>
+
+        <!-- Contatti -->
         <a href="mailto:info@hominisai.ai" class="btn-contact">Contact Us</a>
 
-        <a href="mailto:info@hominisai.ai" class="email-footer">info@hominisai.ai</a>
+        <a href="mailto:info@hominisai.ai" class="email-footer">
+            info@hominisai.ai
+        </a>
     </div>
 
 </body>
